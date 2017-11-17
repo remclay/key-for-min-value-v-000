@@ -2,10 +2,10 @@
 # Given a hash with numeric values, return the key for the smallest value
 
 def key_for_min_value(name_hash)
-  lowest = ""
+  lowest = []
   name_hash.each do |key, value|
     value < lowest
-    lowest = key, value
+    lowest << key, value
   end
-  lowest
+  lowest[0]
 end
